@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a Tech Conference Schedule Table</title>
+    <style>
+    /* Centrar celdas que ocupan toda la fila */
+    .full-row {
+      text-align: center;
+      vertical-align: middle;
+      font-weight: 600;
+      background-color: beige;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .header{ background-color: lightgray; font-weight: bold; font-size: larger;}
+    </style>
 </head>
 <body>
     <h1>Tech Conference 2025 Schedule</h1>
@@ -11,7 +22,7 @@
         <caption>Schedule by Track and Time</caption>
         <hr>
         <thead>
-            <tr>
+            <tr class="header">
                 <th scope="col">Time</th>
                 <th scope="col">Track A</th>
                 <th scope="col">Track B</th>
@@ -34,7 +45,7 @@
             </tr>
             <tr>
                 <th scope="row">11:00 AM</th>
-                <td colspan="3">Break</td>
+                <td colspan="3" class="full-row">Break</td>
             </tr>
             <tr>
                 <th scope="row">11:30 AM</th>
@@ -44,7 +55,7 @@
             </tr>
             <tr>
                 <th scope="row">12:30 PM</th>
-                <td colspan="3">Lunch Break</td>
+                <td colspan="3" class="full-row">Lunch Break</td>
             </tr>
             <tr>
                 <th scope="row">2:00 PM</th>
